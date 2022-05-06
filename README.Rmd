@@ -67,3 +67,15 @@ print(fnames)
 ```
 
 
+
+
+### Example plot
+
+Analyze a single file: `r fnames[1]`
+
+```{r, example-plot}
+  
+analyze(fnames[1])
+
+```
+

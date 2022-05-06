@@ -64,3 +64,13 @@ print(fnames)
     ##  [7] "data/inflammation-07.csv" "data/inflammation-08.csv"
     ##  [9] "data/inflammation-09.csv" "data/inflammation-10.csv"
     ## [11] "data/inflammation-11.csv" "data/inflammation-12.csv"
+
+### Example plot
+
+Analyze a single file: data/inflammation-01.csv
+
+``` r
+analyze(fnames[1])
+```
+
+![](README_files/figure-gfm/example-plot-1.png)<!-- -->
