@@ -49,3 +49,18 @@ analyze <- function(filename) {
   
 }
 ```
+
+### Data files
+
+``` r
+fnames <- list.files('data', pattern = 'inflammation', full.names = TRUE)
+
+print(fnames)
+```
+
+    ##  [1] "data/inflammation-01.csv" "data/inflammation-02.csv"
+    ##  [3] "data/inflammation-03.csv" "data/inflammation-04.csv"
+    ##  [5] "data/inflammation-05.csv" "data/inflammation-06.csv"
+    ##  [7] "data/inflammation-07.csv" "data/inflammation-08.csv"
+    ##  [9] "data/inflammation-09.csv" "data/inflammation-10.csv"
+    ## [11] "data/inflammation-11.csv" "data/inflammation-12.csv"

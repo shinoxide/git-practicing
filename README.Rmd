@@ -55,3 +55,15 @@ analyze <- function(filename) {
 }
 
 ```
+
+### Data files
+
+```{r}
+
+fnames <- list.files('data', pattern = 'inflammation', full.names = TRUE)
+
+print(fnames)
+
+```
+
+
