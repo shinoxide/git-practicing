@@ -74,3 +74,43 @@ analyze(fnames[1])
 ```
 
 ![](README_files/figure-gfm/example-plot-1.png)<!-- -->
+
+### All plots
+
+``` r
+# create 'results' folder if it doesn't already exist
+
+if (!dir.exists('results')) dir.create('results')
+
+
+num_plots = 0 # start count of files plotted
+
+for (f in fnames) {
+  
+  
+  # change file format (from .csv to .png)
+  
+  plot_name <- sub('csv', 'png', f)
+  
+  
+  # change folder (from 'data' to 'results') 
+  
+  plot_name <- sub('data', 'results', plot_name)
+  
+  
+  # save plots to folder
+  
+  png(filename = plot_name, width = 900, height = 300)
+  
+  analyze(f)
+  
+  dev.off() # remember to close print device!
+  
+  
+  num_plots = num_plots + 1  # added to count of files plotted
+  
+}
+```
+
+Successfully saved 12 plots to results folder – ignored in git (run Rmd
+file locally to recreate files).
