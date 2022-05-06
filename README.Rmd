@@ -1,0 +1,11 @@
+---
+title: "Example_report_rmarkdown"
+author: "Adeshina Odugbemi"
+output: github_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
