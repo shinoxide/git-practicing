@@ -2,5 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-git-practice.Rproj
+*.Rproj
 r-novice-inflammation-data.zip
+results/
